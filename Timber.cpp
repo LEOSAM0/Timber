@@ -18,6 +18,10 @@ int main()
 			window.close();
 		}
 
+		window.clear();
+
+		window.display();
+
 	}
 
 	return 0;
