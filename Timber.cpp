@@ -28,6 +28,8 @@ int main()
 
 		window.clear();
 
+		window.draw(spriteBackground);
+
 		window.display();
 
 	}
