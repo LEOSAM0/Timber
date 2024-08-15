@@ -6,31 +6,31 @@ using namespace sf;
 
 int main()
 {
-	sf::VideoMode vm(1920, 1080);
-	sf::RenderWindow window (vm, "Timber!", sf::Style::Fullscreen);
+	sf::VideoMode vm(1920, 1080);//устанавливает режим отображения 1920 на 1080 пикселей
+	sf::RenderWindow window (vm, "Timber!", sf::Style::Fullscreen);//устанавливает видеорежим с меткой "Timber" на полный экран
 	
-	sf::Texture textureBackground;
-	textureBackground.loadFromFile("graphics/background.png");
+	sf::Texture textureBackground;//берётся фон
+	textureBackground.loadFromFile("graphics/background.png");//утанавливается фон из файла.
 
-	sf::Sprite spriteBackground;
-	spriteBackground.setTexture(textureBackground);
+	sf::Sprite spriteBackground;//берётся растровое изображение (Sprite)
+	spriteBackground.setTexture(textureBackground);//фон устанвливается в растровое изображение
 
-	spriteBackground.setPosition(0, 0);
+	spriteBackground.setPosition(0, 0);//устанавливается позиция
 
-	while (window.isOpen())
+	while (window.isOpen())//в то время, когда окно открыто
 	{
 
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))//если нажать на Esc...
 		{
-			window.close();
+			window.close();//...окно закроется
 		}
 
-		window.clear();
+		window.clear();//вызывается каждый кадр, чтобы очистить изображение
 
-		window.draw(spriteBackground);
+		window.draw(spriteBackground);//рисует растровое изображение
 
-		window.display();
+		window.display();//показывает растровое изображение на экране
 
 	}
 
