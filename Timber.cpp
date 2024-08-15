@@ -7,7 +7,7 @@ using namespace sf;
 int main()
 {
 	sf::VideoMode vm(1920, 1080);//устанавливает режим отображения 1920 на 1080 пикселей
-	sf::RenderWindow window (vm, "Timber!", sf::Style::Fullscreen);//устанавливает видеорежим с меткой "Timber" на полный экран
+	sf::RenderWindow window (vm, "Timber!", sf::Style::Fullscreen);//устанавливает видеорежим (окно рендеринга) с меткой "Timber" на полный экран
 	
 	sf::Texture textureBackground;//берётся фон
 	textureBackground.loadFromFile("graphics/background.png");//утанавливается фон из файла.
