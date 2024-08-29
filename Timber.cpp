@@ -4,6 +4,12 @@ using namespace sf;
 
 //this is where our game starts from int main()
 
+
+fdgfdgfdgsetgd
+dggfggfdgfd
+dsgfdsggdsgds
+
+
 int main()
 {
 	sf::VideoMode vm(1920, 1080);//устанавливает режим отображения 1920 на 1080 пикселей
