@@ -4,11 +4,11 @@ using namespace sf;
 
 //this is where our game starts from int main()
 
-
+sdfdgjkhuasfdiuyfisdifgisiufds
 fdgfdgfdgsetgd
 dggfggfdgfd
-dsgfdsggdsgds
-
+dsgfdsggdsgdsdgdsfgfdsfdsf
+dfdsfdsgggggggggggggggggggsdfdsfa
 
 int main()
 {
