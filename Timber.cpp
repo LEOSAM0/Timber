@@ -17,6 +17,16 @@ int main()
 
 	spriteBackground.setPosition(0, 0);//устанавливается позиция
 
+
+	//устанавливаем одно дерево
+	sf::Texture textureTree;
+	textureTree.loadFromFile("graphics/tree.png");
+	sf::Sprite spriteTree;
+	spriteTree.setTexture(textureTree);
+	const float TREE_VERTICAL_POSITION = 0.f;
+	const float TREE_HORIZONTAL_POSITION = 810.f;
+	spriteTree.setPosition(TREE_HORIZONTAL_POSITION, TREE_VERTICAL_POSITION);
+
 	while (window.isOpen())//в то время, когда окно открыто
 	{
 
@@ -29,6 +39,7 @@ int main()
 		window.clear();//вызывается каждый кадр, чтобы очистить изображение
 
 		window.draw(spriteBackground);//рисует растровое изображение
+		window.draw(spriteTree);
 
 		window.display();//показывает растровое изображение на экране
 
