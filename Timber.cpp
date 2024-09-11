@@ -27,6 +27,17 @@ int main()
 	const float TREE_HORIZONTAL_POSITION = 810.f;
 	spriteTree.setPosition(TREE_HORIZONTAL_POSITION, TREE_VERTICAL_POSITION);
 
+	//устанавливаем пчелу
+	sf::Texture textureBee;
+	textureBee.loadFromFile("graphics/bee.png");
+	sf::Sprite spriteBee;
+	spriteBee.setTexture(textureBee);
+	spriteBee.setPosition(0, 500);
+	//двигается ли пчела
+	bool bActiveBee = false;
+	//скорость пчелы
+	float beeSpeed = 0.f;
+
 	while (window.isOpen())//в то время, когда окно открыто
 	{
 
@@ -40,6 +51,7 @@ int main()
 
 		window.draw(spriteBackground);//рисует растровое изображение
 		window.draw(spriteTree);
+		window.draw(spriteBee);
 
 		window.display();//показывает растровое изображение на экране
 
