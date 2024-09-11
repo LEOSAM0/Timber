@@ -38,6 +38,20 @@ int main()
 	//скорость пчелы
 	float beeSpeed = 0.f;
 
+	//устанавливаем облака
+	sf::Texture textureCloud;
+	textureCloud.loadFromFile("graphics/cloud.png");
+	sf::Sprite spriteCloud1;
+	sf::Sprite spriteCloud2;
+	sf::Sprite spriteCloud3;
+	spriteCloud1.setTexture(textureCloud);
+	spriteCloud2.setTexture(textureCloud);
+	spriteCloud3.setTexture(textureCloud);
+	spriteCloud1.setPosition(0, 0);
+	spriteCloud2.setPosition(0, 100);
+	spriteCloud3.setPosition(0, 200);
+
+
 	while (window.isOpen())//в то время, когда окно открыто
 	{
 
@@ -52,6 +66,9 @@ int main()
 		window.draw(spriteBackground);//рисует растровое изображение
 		window.draw(spriteTree);
 		window.draw(spriteBee);
+		window.draw(spriteCloud1);
+		window.draw(spriteCloud2);
+		window.draw(spriteCloud3);
 
 		window.display();//показывает растровое изображение на экране
 
