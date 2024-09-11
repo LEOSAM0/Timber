@@ -50,6 +50,12 @@ int main()
 	spriteCloud1.setPosition(0, 0);
 	spriteCloud2.setPosition(0, 100);
 	spriteCloud3.setPosition(0, 200);
+	bool bActiveCloud1 = false;
+	bool bActiveCloud2 = false;
+	bool bActiveCloud3 = false;
+	float Cloud1Speed = 0.f;
+	float Cloud2Speed = 0.f;
+	float Cloud3Speed = 0.f;
 
 
 	while (window.isOpen())//в то время, когда окно открыто
